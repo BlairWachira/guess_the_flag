@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Guess the Flag</title>
+    <style>
+      body {
+        font-family: Arial;
+        text-align: center;
+        padding-top: 50px;
+      }
+      img {
+        width: 300px;
+        height: auto;
+        border: 2px solid #000;
+      }
+      input,
+      button {
+        margin-top: 10px;
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Guess the Flag</h1>
+    <img src="{{ flag.image.url }}" alt="Flag" />
+    <form method="post">
+      {% csrf_token %}
+      <input
+        type="text"
+        name="guess"
+        placeholder="Enter country name"
+        autocomplete="off"
+      />
+      <button type="submit">Submit</button>
+    </form>
+    <h2>{{ message }}</h2>
+  </body>
+</html>
