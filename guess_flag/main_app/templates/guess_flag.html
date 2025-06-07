@@ -1,24 +1,11 @@
+{% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Guess the Flag</title>
-    <style>
-      body {
-        font-family: Arial;
-        text-align: center;
-        padding-top: 50px;
-      }
-      img {
-        width: 300px;
-        height: auto;
-        border: 2px solid #000;
-      }
-      input,
-      button {
-        margin-top: 10px;
-        padding: 8px;
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'main_app/guess_flag.css' %}" />
   </head>
   <body>
     <h1>Guess the Flag</h1>
@@ -31,8 +18,10 @@
         placeholder="Enter country name"
         autocomplete="off"
       />
-      <button type="submit">Submit</button>
-      <button type="submit" name="action" value="skip">Skip</button>
+      <button class="subimt_button" type="submit">Submit</button>
+      <button class="skip_button" type="submit" name="action" value="skip">
+        Skip
+      </button>
     </form>
     <h2>{{ message }}</h2>
   </body>

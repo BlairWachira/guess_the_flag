@@ -1,0 +1,26 @@
+
+body {
+font-family: Arial;
+text-align: center;
+padding-top: 50px;
+}
+img {
+width: 300px;
+height: auto;
+border: 2px solid #000;
+}
+input {
+margin-top: 10px;
+padding: 8px;
+}
+.subimt_button{
+   margin-top: 10px;
+   padding: 8px; 
+  
+}
+.skip_button{
+   margin-top: 10px;
+   padding: 8px; 
+   
+}
+   
